@@ -1,0 +1,109 @@
+# dune exec aoc -w
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/luisvargas/.cache/dune/db
+# Workspace root: /Users/luisvargas/Desktop/Projects/AOC/ocaml/aoc
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/Users/luisvargas/Desktop/Projects/AOC/ocaml/aoc/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /Users/luisvargas/.opam/default/bin/ocamlc.opt -config > /var/folders/2y/ks0tkf715z134yvqt6_7tpl80000gn/T/dune_7adf0b_output
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/aoc.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", lines 11-14, characters 8-36:
+> 11 | ........let current_char = value.[i] in
+> 12 |         if is_digit current_char then
+> 13 |             numbers_in_line := current_char :: !numbers_in_line;
+> 14 |             print_char current_char;
+> Error: Syntax error: 'done' expected
+> File "bin/main.ml", line 10, characters 25-27:
+> 10 |     for i = 0 to len - 1 do
+>                               ^^
+>   This 'do' might be unmatched
+[2]
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/aoc.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 27, characters 34-35:
+> 27 |     print_endline "No digit found":
+>                                        ^
+> Error: Syntax error
+[2]
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", lines 27-28, characters 4-9:
+> 27 | ....print_endline "No digit found"
+> 28 |     flush........
+> Error: The function 'print_endline' has type string -> unit
+>        It is applied to too many arguments
+> File "bin/main.ml", line 27, characters 33-35:
+> 27 |     print_endline "No digit found"
+>                                       ^^
+>   Hint: Did you forget a ';'?
+> File "bin/main.ml", line 28, characters 4-9:
+> 28 |     flush stdout;
+>          ^^^^^
+>   This extra argument is not expected.
+[2]
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/aoc.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 35, characters 19-28:
+> 35 |   let ic = open_in file_path in
+>                         ^^^^^^^^^
+> Error: Unbound value file_path
+[2]
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/aoc.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 15, characters 10-15:
+> 15 |     (Some first, match List.rev rest with
+>                ^^^^^
+> Error: This expression has type char but an expression was expected of type
+>          int
+[2]
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 15, characters 10-15:
+> 15 |     (Some first, match List.rev rest with
+>                ^^^^^
+> Error: This expression has type char but an expression was expected of type
+>          int
+[2]
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 26, characters 53-64:
+> 26 |       print_endline ("First digit: " ^ string_of_int first_digit);
+>                                                           ^^^^^^^^^^^
+> Error: This expression has type char but an expression was expected of type
+>          int
+[2]
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 15, characters 10-15:
+> 15 |     (Some first, match List.rev rest with
+>                ^^^^^
+> Error: This expression has type char but an expression was expected of type
+>          int
+[2]
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 26, characters 40-51:
+> 26 |       print_endline ("First digit: " ^  first_digit);
+>                                              ^^^^^^^^^^^
+> Error: This expression has type char but an expression was expected of type
+>          string
+[2]
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/aoc.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.aoc.objs/byte -I lib/.aoc.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/luisvargas/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/aoc.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
